@@ -16,7 +16,7 @@ playerMap = {
 order = []
 
 while(playerMap):
-	draw = random.randint(1,10)
+	draw = random.randint(min(playerMap),max(playerMap))
 	if draw in playerMap.keys():
 		order.append(playerMap.pop(draw))
 
